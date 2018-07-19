@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.90.2">
+  <Settings>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="numcomp2" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <ImageComponent name="image">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val=".51" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$stimFile" valType="str"/>
+        <Param name="size" updates="constant" val="(1.3, 1)" valType="code"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val=".52" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <TextComponent name="text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="text" updates="constant" val="ok!&amp;#10;&amp;#10;Using the LEFT and RIGHT&amp;#10;arrow keys please indicate&amp;#10;which side of the screen &amp;#10;has more objects." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="ok_to_go">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="ok_to_go" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space'" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="conditionsFile" updates="None" val="tbtstimpy.csv" valType="str"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([(u'Number1', 10), (u'Number2', 11), (u'Sum', 21), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim1.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 11), (u'Sum', 21), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim2.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 22), (u'Sum', 42), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim3.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 22), (u'Sum', 42), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim4.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 33), (u'Sum', 63), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim5.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 33), (u'Sum', 63), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim6.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 15), (u'Number2', 18), (u'Sum', 33), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim7.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 15), (u'Number2', 18), (u'Sum', 33), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim8.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 25), (u'Number2', 30), (u'Sum', 55), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim9.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 25), (u'Number2', 30), (u'Sum', 55), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim10.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 45), (u'Number2', 54), (u'Sum', 99), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim11.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 45), (u'Number2', 54), (u'Sum', 99), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim12.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 13), (u'Sum', 23), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim13.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 13), (u'Sum', 23), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim14.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 14), (u'Number2', 19), (u'Sum', 33), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim15.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 14), (u'Number2', 19), (u'Sum', 33), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim16.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 39), (u'Sum', 69), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim17.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 39), (u'Sum', 69), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim18.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 15), (u'Number2', 21), (u'Sum', 36), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim19.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 15), (u'Number2', 21), (u'Sum', 36), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim20.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 25), (u'Number2', 35), (u'Sum', 60), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim21.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 25), (u'Number2', 35), (u'Sum', 60), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim22.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 40), (u'Number2', 42), (u'Sum', 72), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim23.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 40), (u'Number2', 42), (u'Sum', 72), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim24.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 15), (u'Sum', 25), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim25.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 15), (u'Sum', 25), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim26.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 30), (u'Sum', 50), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim27.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 30), (u'Sum', 50), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim28.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 45), (u'Sum', 75), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim29.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 45), (u'Sum', 75), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim30.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 40), (u'Number2', 60), (u'Sum', 100), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim31.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 40), (u'Number2', 60), (u'Sum', 100), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim32.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 50), (u'Number2', 75), (u'Sum', 125), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim33.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 50), (u'Number2', 75), (u'Sum', 125), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim34.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 32), (u'Sum', 52), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim35.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 32), (u'Sum', 52), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim36.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 35), (u'Number2', 56), (u'Sum', 91), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim37.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 35), (u'Number2', 56), (u'Sum', 91), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim38.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 34), (u'Sum', 54), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim39.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 20), (u'Number2', 34), (u'Sum', 54), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim40.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 51), (u'Sum', 81), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim41.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 30), (u'Number2', 51), (u'Sum', 81), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim42.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 18), (u'Sum', 28), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim43.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 18), (u'Sum', 28), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim44.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 14), (u'Number2', 26), (u'Sum', 40), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim45.png'), (u'Larger_side', u'left')]), OrderedDict([(u'Number1', 10), (u'Number2', 11), (u'Sum', 21), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim46.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 11), (u'Sum', 21), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim47.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 22), (u'Sum', 42), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim48.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 22), (u'Sum', 42), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim49.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 33), (u'Sum', 63), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim50.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 33), (u'Sum', 63), (u'Ratio', 1.1), (u'stimFile', u'/py_numcom_stimtbtstim51.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 15), (u'Number2', 18), (u'Sum', 33), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim52.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 15), (u'Number2', 18), (u'Sum', 33), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim53.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 25), (u'Number2', 30), (u'Sum', 55), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim54.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 25), (u'Number2', 30), (u'Sum', 55), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim55.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 45), (u'Number2', 54), (u'Sum', 99), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim56.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 45), (u'Number2', 54), (u'Sum', 99), (u'Ratio', 1.2), (u'stimFile', u'/py_numcom_stimtbtstim57.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 13), (u'Sum', 23), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim58.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 13), (u'Sum', 23), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim59.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 14), (u'Number2', 19), (u'Sum', 33), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim60.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 14), (u'Number2', 19), (u'Sum', 33), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim61.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 39), (u'Sum', 69), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim62.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 39), (u'Sum', 69), (u'Ratio', 1.3), (u'stimFile', u'/py_numcom_stimtbtstim63.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 15), (u'Number2', 21), (u'Sum', 36), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim64.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 15), (u'Number2', 21), (u'Sum', 36), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim65.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 25), (u'Number2', 35), (u'Sum', 60), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim66.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 25), (u'Number2', 35), (u'Sum', 60), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim67.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 40), (u'Number2', 42), (u'Sum', 72), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim68.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 40), (u'Number2', 42), (u'Sum', 72), (u'Ratio', 1.4), (u'stimFile', u'/py_numcom_stimtbtstim69.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 15), (u'Sum', 25), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim70.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 15), (u'Sum', 25), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim71.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 30), (u'Sum', 50), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim72.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 30), (u'Sum', 50), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim73.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 45), (u'Sum', 75), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim74.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 45), (u'Sum', 75), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim75.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 40), (u'Number2', 60), (u'Sum', 100), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim76.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 40), (u'Number2', 60), (u'Sum', 100), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim77.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 50), (u'Number2', 75), (u'Sum', 125), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim78.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 50), (u'Number2', 75), (u'Sum', 125), (u'Ratio', 1.5), (u'stimFile', u'/py_numcom_stimtbtstim79.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 32), (u'Sum', 52), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim80.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 32), (u'Sum', 52), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim81.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 35), (u'Number2', 56), (u'Sum', 91), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim82.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 35), (u'Number2', 56), (u'Sum', 91), (u'Ratio', 1.6), (u'stimFile', u'/py_numcom_stimtbtstim83.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 34), (u'Sum', 54), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim84.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 20), (u'Number2', 34), (u'Sum', 54), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim85.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 51), (u'Sum', 81), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim86.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 30), (u'Number2', 51), (u'Sum', 81), (u'Ratio', 1.7), (u'stimFile', u'/py_numcom_stimtbtstim87.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 18), (u'Sum', 28), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim88.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 10), (u'Number2', 18), (u'Sum', 28), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim89.png'), (u'Larger_side', u'right')]), OrderedDict([(u'Number1', 14), (u'Number2', 26), (u'Sum', 40), (u'Ratio', 1.8), (u'stimFile', u'/py_numcom_stimtbtstim90.png'), (u'Larger_side', u'right')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="[3,4,6]" valType="str"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+  </Flow>
+</PsychoPy2experiment>
